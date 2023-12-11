@@ -14,7 +14,9 @@ const postRegister = async (req, res) => {
     console.log(userExists);
 
     if (userExists) {
+      console.log(userExists)
       return res.status(409).send("E-mail already in use.");
+
     }
 
     // encrypt password
