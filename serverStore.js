@@ -68,6 +68,9 @@ const addNewActiveRoom=(userId,socketId) =>{
   console.log(activeRooms)
   return newActiveRoom
 }
+const getActiveRooms=()=>{
+  return [...activeRooms]
+}
 
 
 module.exports = {
@@ -77,5 +80,6 @@ module.exports = {
   setSocketServerInstance,
   getSocketServerInstance,
   getOnlineUsers,
-  addNewActiveRoom
+  addNewActiveRoom,
+  getActiveRooms
 };
